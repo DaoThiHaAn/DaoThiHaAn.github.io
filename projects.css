@@ -1,0 +1,118 @@
+.project-title {
+  color: #b49cc5;
+  text-align: center;
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    margin: auto;
+    padding: 20px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #816e8f;
+}
+
+/* Individual project */
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Odd projects: project card -> vertical line -> date */
+.project:nth-child(odd) {
+    flex-direction: row;
+}
+
+.project:nth-child(odd) .main-info {
+    order: 1;
+}
+
+.project:nth-child(odd) .date {
+    order: 2;
+    margin-left: 20px;
+}
+
+/* Even projects: date -> vertical line -> project card */
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project:nth-child(even) .main-info {
+    order: 1;
+}
+
+.project:nth-child(even) .date {
+    order: 2;
+    margin-right: 20px;
+}
+
+/* Main info (project card) styling */
+.main-info {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, background-image 3s ease-in-out;
+    position: relative;
+    width: 55%;
+    padding: 20px 40px;
+    background-color: #fff0ff;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 2em;
+}
+
+.project:nth-child(odd) .main-info {
+    text-align: left;
+}
+
+.project:nth-child(even) .main-info {
+    text-align: right;
+} 
+
+.project:nth-child(even) .main-info:hover {
+    transform: translateX(50px);
+    background-image: linear-gradient(to bottom left, wheat, #fff0ff);
+}
+
+.project:nth-child(odd) .main-info:hover {
+    transform: translateX(-50px);
+    background-image: linear-gradient(to bottom right, wheat, #fff0ff);
+}
+
+.main-info div {
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria;
+    font-size: 1.3em;
+}
+
+.main-info a {
+    color: var(--header-color);
+    width: fit-content;
+}
+
+.date {
+    font-size: 1.2em;
+    color: #816e8f;
+    font-weight: bold;
+    text-align: center;
+}
+

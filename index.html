@@ -6,17 +6,116 @@
         <title>Ha An's Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/16584dbab5.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
-            
+            <div class="nav-item">
+                <a href="index.html">Home</a>
+            </div>
 
+            <div class="nav-item">
+                <a href="#about">About Me</a>
+            </div>
+            
+            <div class="nav-item">
+                <a href="#projects">Projects</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
+
         <main>
+            <section id="about">
+                <div class="avatar" title="Me at High School Graduation Ceremony">
+                    <img src="images/avatar.png" alt="My Avatar" class="avatar"> 
+                </div>
+                <div class="my-info">
+                    <h1>Hi,</h1>
+                    <h2>My name is Đào Thị Hà An</h2>
+                    <h3>I'm an undergraduate majoring in Computer Science in HCMUT</h3>
+                    <p>
+                        I am passionate about coding, problem-solving, and creating innovative solutions. 
+                        I am currently exploring opportunities to grow my skills and contribute to exciting projects.
+                    </p>            
+                </div>
+            </section>
+            
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-icons">
+                        <img src="images/html5.png" alt="HTML" title="HTML">
+                        <img src="images/css3.png" alt="CSS" title="CSS">
+                        <img src="images/js.png" alt="JavaScript" title="JavaScript">
+                        <img src="images/react.png" alt="React" title="React">
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skills-icons">
+                        <img src="images/php.png" alt="PHP" title="PHP">
+                        <img src="images/sql-server.png" alt="SQL" title="SQL">
+                        <img src="images/nodejs.png" alt="Node.js" title="Node.js">
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Mobile Development</h3>
+                    <div class="skills-icons">
+                        <img src="images/dart.png" alt="Dart" title="Dart">
+                        <img src="images/flutter.png" alt="Flutter" title="Flutter">
+                        <img src="images/java.jpg" alt="Java" title="Java">
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Other languages</h3>
+                    <div class="skills-icons">
+                        <img src="images/c.png" alt="C+" title="C/C++">
+                        <img src="images/python.png" alt="Python" title="Python">
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools</h3>
+                    <div class="skills-icons">
+                        <img src="images/figma.png" alt="Figma" title="Figma">
+                    </div>
+                </div>
+                <p>
+                    You can view my CV <a href="https://drive.google.com/file/d/1cLrlgTq1W9lKJr5_9iWM9wpcivJlOM_c/view?usp=sharing" target="_blank">here</a>.
+                </p>
+    
+            </section>
+
+
+            <section id="projects">
+                <a href="projects.html" class="projects-link">
+                    View all my projects
+                </a>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:daothihaan@gmail.com">daothihaan@gmail.com</a></p>
+                <p>Phone: +84 91565109</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/andaothiha-hcmut" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn" >
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100008478871815" target="_blank">
+                        <img src="images/fb.png" alt="Facebook">
+                    </a>
+                </div>
+            </section>
+
 
         </main>
     </body>
 </html>
+
+<script src="script.js"></script>
