@@ -1,5 +1,4 @@
 .project-title {
-  color: #b49cc5;
   text-align: center;
   margin: 0;
   padding: 40px 0;
@@ -36,6 +35,13 @@
     width: 100%;
     margin: 20px 0;
     position: relative;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: rgb(125, 38, 147);
+    margin-bottom: 0;
+
 }
 
 /* Odd projects: project card -> vertical line -> date */
@@ -101,7 +107,7 @@
     display: flex;
     flex-direction: column;
     font-family: Cambria;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .main-info a {
